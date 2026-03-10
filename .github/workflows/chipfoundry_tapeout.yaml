@@ -79,6 +79,7 @@ jobs:
         run: |
           cf push \
             --project-root tinytapeout_submission \
+            --project-name "$CHIPFOUNDRY_PROJECT_NAME" \
             --project-type openframe \
             --force-overwrite \
             --submit
